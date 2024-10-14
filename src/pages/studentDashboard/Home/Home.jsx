@@ -2,12 +2,15 @@ import React from 'react'
 
 import  { Link } from "react-router-dom"
 
+
+import StudentDashNavbar from '../../../components/dashboard/student/StudentDashNavbar/StudentDashNavbar'
+
 const Home = () => {
   return (
-    <div>
-        Home
+    <div className='home'>
+        
+        <StudentDashNavbar/>
 
-        <Link to="/graduation-links">Go to graduation links</Link>
     </div>
   )
 }

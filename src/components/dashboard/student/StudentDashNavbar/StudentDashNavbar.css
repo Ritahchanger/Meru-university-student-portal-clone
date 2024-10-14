@@ -1,0 +1,71 @@
+.navbar .container {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  text-align: center;
+
+  height: 100%;
+}
+
+.navbar {
+  height: 50px;
+
+  width: 100%;
+
+  position: fixed;
+
+  right: 0;
+
+  left: 0;
+
+  z-index: 99;
+
+  background: var(--backgroundOne);
+}
+
+.navbar .container .icon-image {
+  height: 30px;
+
+  width: 30px;
+}
+.navbar .container .profile-card {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+  text-align: center;
+
+  margin-right: 2rem;
+}
+.navbar .container .left-card {
+  width: 250px;
+
+  height: 100%;
+
+  background: var(--black);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+  position:relative;
+}
+
+.navbar .container .left-card .menu-icon{
+    border:none;
+    background:none;
+    color:var(--white);
+    position:absolute;
+    right:3px;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+   
+}
