@@ -1,0 +1,17 @@
+.sidebar {
+  height: calc(100vh - 50px);
+
+  width: 250px;
+
+  background: var(--backgroundOne);
+
+  overflow-y: scroll;
+}
+
+.sidebar ul li a {
+  display: block;
+
+  padding: 0.6rem 1rem;
+
+  text-decoration: none;
+}

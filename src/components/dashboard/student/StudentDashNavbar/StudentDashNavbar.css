@@ -40,6 +40,18 @@
   text-align: center;
 
   margin-right: 2rem;
+
+  height: 100%;
+}
+.navbar .container .profile-card .dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+.navbar .container .profile-card .dropdown span {
+  font-size: 1.4rem;
 }
 .navbar .container .left-card {
   width: 250px;
@@ -48,24 +60,22 @@
 
   background: var(--black);
 
-  display:flex;
+  display: flex;
 
-  align-items:center;
+  align-items: center;
 
-  justify-content:center;
-  position:relative;
+  justify-content: center;
+  position: relative;
 }
 
-.navbar .container .left-card .menu-icon{
-    border:none;
-    background:none;
-    color:var(--white);
-    position:absolute;
-    right:3px;
+.navbar .container .left-card .menu-icon {
+  border: none;
+  background: none;
+  color: var(--white);
+  position: absolute;
+  right: 3px;
 
-    top:50%;
+  top: 50%;
 
-    transform:translate(-50%,-50%);
-
-   
+  transform: translate(-50%, -50%);
 }
