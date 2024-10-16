@@ -9,9 +9,20 @@
 }
 
 .sidebar ul li a {
-  display: block;
+  display:flex;
 
   padding: 0.6rem 1rem;
 
   text-decoration: none;
+
+  align-items:center;
+  text-align:center;
+}
+
+.sidebar ul li a span{
+    display:flex;
+   
+    align-items:center;
+    margin-right:10px;
+    font-size:1.4rem;
 }
