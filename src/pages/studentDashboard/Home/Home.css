@@ -3,7 +3,7 @@
 
   gap: 10px;
 
-  padding:1.5rem 0 1.5rem 1.5rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 }
 
 .home .main .personal-information {
@@ -11,12 +11,9 @@
 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
-  padding:1rem;
 }
 .home .main .center-container {
   flex-basis: 45%;
-
- 
 }
 
 .home .main .contact-information {
@@ -24,23 +21,33 @@
 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
-  padding:1rem;
-
+  padding: 1rem;
 }
 
-.home .main .center-container .grid{
+.home .main .center-container .grid {
+  display: grid;
 
-  display:grid;
+  grid-template-columns: repeat(2, 1fr);
 
-  grid-template-columns:repeat(2,1fr);
-
-  gap:10px;
-
+  gap: 10px;
 }
-.home .main .center-container .grid .card-2{
-
+.home .main .center-container .grid .card-2 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
-  padding:1rem;
+  padding: 1rem;
+}
 
+@media (max-width: 850px) {
+  .home .main .center-container .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 814px) {
+  .home .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 1.5rem;
+  }
 }

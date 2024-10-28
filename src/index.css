@@ -46,3 +46,14 @@ ul {
   width: calc(100% - 250px);
   float: right;
 }
+
+
+@media(max-width:1132px){
+
+  .main{
+
+    width:100%;
+  
+  }
+  
+}

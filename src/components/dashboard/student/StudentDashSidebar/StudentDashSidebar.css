@@ -42,3 +42,14 @@
 .sidebar ul li a:hover span {
   color: var(--white);
 }
+
+
+@media(max-width:1132px){
+
+  .sidebar{
+
+    display:none;
+  
+  }
+  
+}

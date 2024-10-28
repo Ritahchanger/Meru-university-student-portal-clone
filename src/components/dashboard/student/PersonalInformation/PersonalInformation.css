@@ -1,0 +1,25 @@
+.profile-icon-wrapper img {
+  max-width: 90px;
+
+  max-height: 90px;
+}
+
+.profile-icon-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 1rem 0rem;
+}
+
+.personal-information li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ababab;
+}
+.personal-information li {
+  font-size: 0.8rem;
+}
