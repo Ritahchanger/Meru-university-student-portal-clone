@@ -3,6 +3,7 @@
   width: 250px;
   background: var(--backgroundOne);
   overflow-y: scroll;
+  position: fixed;
 }
 
 .sidebar ul li a {
@@ -15,7 +16,7 @@
   padding: 0.4rem 2rem;
   width: 100%;
   height: 100%;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 
 .sidebar .card-title {

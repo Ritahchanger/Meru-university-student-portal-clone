@@ -1,0 +1,46 @@
+.home .main {
+  display: flex;
+
+  gap: 10px;
+
+  padding:1.5rem 0 1.5rem 1.5rem;
+}
+
+.home .main .personal-information {
+  flex-basis: 23%;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  padding:1rem;
+}
+.home .main .center-container {
+  flex-basis: 45%;
+
+ 
+}
+
+.home .main .contact-information {
+  flex-basis: 26%;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  padding:1rem;
+
+}
+
+.home .main .center-container .grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:10px;
+
+}
+.home .main .center-container .grid .card-2{
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  padding:1rem;
+
+}
