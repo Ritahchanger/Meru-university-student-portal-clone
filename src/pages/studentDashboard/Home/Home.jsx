@@ -8,6 +8,7 @@ import StudentDashNavbar from "../../../components/dashboard/student/StudentDash
 import StudentDashSidebar from "../../../components/dashboard/student/StudentDashSidebar/StudentDashSidebar";
 import PersonalInformation from "../../../components/dashboard/student/PersonalInformation/PersonalInformation";
 import ContactInformation from "../../../components/dashboard/student/ContactInformation/ContactInformation";
+import WifiInformation from "../../../components/dashboard/student/WifiInformation/WifiInformation";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
               <p className="units">43</p>
             </div>
             <div className="card-2">
-              <h3 className="subtitle">Wifi information</h3>
+            <WifiInformation/>
             </div>
             <div className="card-2">
               <h3 className="subtitle">Fee payment</h3>

@@ -31,6 +31,35 @@ const ContactInformation = () => {
           </div>
         </div>
       </div>
+      <div className="p-[1rem] custom-shadow mt-[10px]">
+        <p>Quick Help and Links</p>
+        <div className="border border-neutral-400">
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">FAQ</p>
+          </div>
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">
+              Academic requisitions guide
+            </p>
+          </div>
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">
+              How Do I register for Units
+            </p>
+          </div>
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">
+              Lecturer Evaluation Guide
+            </p>
+          </div>
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">Change of Course Guide</p>
+          </div>
+          <div className="border-b border-neutral-400 p-[1rem]">
+            <p className="text-neutral-400 text-sm">LMS(Online Learning)</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
