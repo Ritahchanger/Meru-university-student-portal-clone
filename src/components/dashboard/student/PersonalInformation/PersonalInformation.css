@@ -23,3 +23,7 @@
 .personal-information li {
   font-size: 0.8rem;
 }
+
+.personal-information .subtitle{
+  margin:1rem;
+}

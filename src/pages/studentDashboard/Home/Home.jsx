@@ -15,14 +15,16 @@ const Home = () => {
       <StudentDashNavbar />
       <StudentDashSidebar />
       <div className="main">
-       <PersonalInformation/>
+        <PersonalInformation />
         <div className="center-container">
           <div className="grid">
             <div className="card-2">
               <h3 className="subtitle">Units Registered (current sem)</h3>
+              <p className="units">8</p>
             </div>
             <div className="card-2">
               <h3 className="subtitle">Units Registered (previous sem)</h3>
+              <p className="units">43</p>
             </div>
             <div className="card-2">
               <h3 className="subtitle">Wifi information</h3>
@@ -32,7 +34,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <ContactInformation/>
+        <ContactInformation />
       </div>
     </div>
   );

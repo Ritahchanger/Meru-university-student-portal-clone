@@ -18,10 +18,6 @@
 
 .home .main .contact-information {
   flex-basis: 26%;
-
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-
-  padding: 1rem;
 }
 
 .home .main .center-container .grid {
@@ -35,6 +31,10 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
   padding: 1rem;
+}
+
+.home .main .center-container .grid .card-2 .units{
+  border-top:1px solid #ababab;
 }
 
 @media (max-width: 850px) {

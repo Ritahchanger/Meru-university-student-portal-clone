@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
@@ -11,6 +15,11 @@
   --backgroundOne: #02e45c;
   --black: #000;
   --backgroundFour: #ecb40a;
+  --custom-shadow:0 0 5px rgba(0,0,0,0.25);
+}
+
+.custom-shadow{
+  box-shadow:var(--custom-shadow);
 }
 
 ::-webkit-scrollbar {
@@ -46,14 +55,14 @@ ul {
   width: calc(100% - 250px);
   float: right;
 }
+.units{
+  font-size:2rem;
+  text-align:center;
+  margin-top:1rem;
+}
 
-
-@media(max-width:1132px){
-
-  .main{
-
-    width:100%;
-  
+@media (max-width: 1132px) {
+  .main {
+    width: 100%;
   }
-  
 }
