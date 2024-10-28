@@ -27,9 +27,8 @@
 }
 
 .navbar .container .icon-image {
-  height: 30px;
-
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 .navbar .container .profile-card {
   display: flex;

@@ -1,28 +1,43 @@
 .sidebar {
   height: calc(100vh - 50px);
-
   width: 250px;
-
   background: var(--backgroundOne);
-
   overflow-y: scroll;
 }
 
 .sidebar ul li a {
-  display:flex;
-
-  padding: 0.6rem 1rem;
-
+  display: flex;
   text-decoration: none;
-
-  align-items:center;
-  text-align:center;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  font-size: 0.9rem;
+  padding: 0.4rem 2rem;
+  width: 100%;
+  height: 100%;
+  transition:all 0.5s;
 }
 
-.sidebar ul li a span{
-    display:flex;
-   
-    align-items:center;
-    margin-right:10px;
-    font-size:1.4rem;
+.sidebar .card-title {
+  color: var(--backgroundFour);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+.sidebar ul li a span {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+.sidebar ul li a:hover {
+  background: var(--black);
+  color: var(--backgroundFour);
+}
+.sidebar ul li a span {
+  font-size: 1rem;
+}
+
+.sidebar ul li a:hover span {
+  color: var(--white);
 }

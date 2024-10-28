@@ -1,117 +1,114 @@
-import { MdOutlineArrowDropDownCircle } from "react-icons/md";
+import { MdDashboard, MdPayment, MdSchool, MdSettings, MdHelpOutline } from "react-icons/md";
+import { FaUniversity, FaFileInvoiceDollar, FaClipboardList, FaChalkboardTeacher } from "react-icons/fa";
+import { IoReceiptOutline } from "react-icons/io5";
+import { IoIosPeople, IoIosPaper } from "react-icons/io";
+import { BsFillHouseDoorFill, BsCardChecklist } from "react-icons/bs";
+import { AiFillFilePdf, AiOutlineQuestionCircle } from "react-icons/ai";
+
 const sidebarData = [
   {
     title: "Core",
-
     sidebarPages: [
       {
         subTitle: "Dashboard",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <MdDashboard />,
       },
       {
         subTitle: "Graduation Links",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <FaUniversity />,
       },
     ],
   },
   {
     title: "Financials",
-
     sidebarPages: [
       {
-        subTitle: "Fee statement",
-        icon: <MdOutlineArrowDropDownCircle />,
+        subTitle: "Fee Statement",
+        icon: <FaFileInvoiceDollar />,
       },
       {
         subTitle: "Receipts",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <IoReceiptOutline />,
       },
       {
-        subTitle: "Fee payment Letter",
-        icon: <MdOutlineArrowDropDownCircle />,
+        subTitle: "Fee Payment Letter",
+        icon: <MdPayment />,
       },
     ],
   },
   {
     title: "Academics",
-
     sidebarPages: [
       {
         subTitle: "Unit Registration",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <FaClipboardList />,
       },
       {
-        subTitle:"Lectures Evaluation",
-        icon: <MdOutlineArrowDropDownCircle />,
+        subTitle: "Lectures Evaluation",
+        icon: <FaChalkboardTeacher />,
       },
       {
         subTitle: "Industrial Attachment",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <IoIosPeople />,
       },
     ],
   },
   {
     title: "Examination",
-
     sidebarPages: [
       {
         subTitle: "Exam Card",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <BsCardChecklist />,
       },
       {
-        subTitle:"Provisional result slip",
-        icon: <MdOutlineArrowDropDownCircle />,
+        subTitle: "Provisional Result Slip",
+        icon: <AiFillFilePdf />,
       },
-
     ],
   },
   {
     title: "Accommodation",
-
     sidebarPages: [
       {
-        subTitle: "Hostel clearance",
-        icon: <MdOutlineArrowDropDownCircle />,
+        subTitle: "Hostel Clearance",
+        icon: <BsFillHouseDoorFill />,
       },
     ],
   },
   {
     title: "Settings",
-
     sidebarPages: [
       {
         subTitle: "Change Password",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <MdSettings />,
       },
     ],
   },
   {
     title: "Help",
-
     sidebarPages: [
       {
         subTitle: "FAQ",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <AiOutlineQuestionCircle />,
       },
       {
         subTitle: "Unit Registration Guide",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <MdHelpOutline />,
       },
       {
         subTitle: "Lecturer Evaluation",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <FaChalkboardTeacher />,
       },
       {
         subTitle: "Change of Course Guide",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <AiOutlineQuestionCircle />,
       },
       {
         subTitle: "LMS",
-        icon: <MdOutlineArrowDropDownCircle />,
+        icon: <IoIosPaper />,
       },
     ],
   },
-  
 ];
 
 export default sidebarData;

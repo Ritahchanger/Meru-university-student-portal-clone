@@ -8,7 +8,7 @@
 }
 :root {
   --white: #ffffff;
-  --backgroundOne: #22ec0a;
+  --backgroundOne: #02e45c;
   --black: #000;
   --backgroundFour: #ecb40a;
 }
@@ -38,7 +38,6 @@ img {
   width: 100%;
 }
 
-
-ul{
-  list-style:none;
+ul {
+  list-style: none;
 }

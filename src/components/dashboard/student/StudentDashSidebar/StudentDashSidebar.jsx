@@ -6,9 +6,7 @@ const StudentDashSidebar = () => {
     <div className="sidebar">
       <div className="sidebar-content">
         {sidebarData.map((item, index) => (
-          <div className="sidebar-card" style={{
-            padding:"1rem"
-          }}>
+          <div className="sidebar-card">
             <p className="card-title">{item.title}</p>
             <ul>
               {item.sidebarPages.map((insideItem, inde) => (

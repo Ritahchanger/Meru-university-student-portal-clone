@@ -9,7 +9,7 @@ const StudentDashNavbar = () => {
         <div className="container">
           <div className="left-card">
             <img
-              src={AssetsExporter.profileIcon}
+              src="https://student.must.ac.ke/img/Logo.png"
               className="icon-image"
               alt=""
             />
