@@ -17,7 +17,7 @@ const PersonalInformation = () => {
       <h3 className="subtitle font-semibold">Personal Information</h3>
       <div className="profile-icon-wrapper">
         <img src={ProfileIcon} alt="" />
-        <button className="text-xs-extra custom-orange py-[0.5rem] px-[1rem] mt-10">
+        <button className="text-xs-extra custom-orange border-md py-[0.5rem] px-[1rem] mt-10">
           Update Information
         </button>
       </div>
