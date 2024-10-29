@@ -15,14 +15,14 @@
   --backgroundOne: #02e45c;
   --black: #000;
   --backgroundFour: #ecb40a;
-  --custom-shadow:0 0 5px rgba(0,0,0,0.25);
+  --custom-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
-.custom-orange{
-  background:var(--backgroundFour);
+.custom-orange {
+  background: var(--backgroundFour);
 }
 
-.custom-shadow{
-  box-shadow:var(--custom-shadow);
+.custom-shadow {
+  box-shadow: var(--custom-shadow);
 }
 
 ::-webkit-scrollbar {
@@ -39,7 +39,7 @@
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 100%;
 
   width: 100%;
 
@@ -57,16 +57,15 @@ ul {
 .main {
   width: calc(100% - 250px);
   float: right;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
-.main.mobile{
-  width:100%;
-  
+.main.mobile {
+  width: 100%;
 }
-.units{
-  font-size:2rem;
-  text-align:center;
-  margin-top:1rem;
+.units {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 @media (max-width: 1132px) {
