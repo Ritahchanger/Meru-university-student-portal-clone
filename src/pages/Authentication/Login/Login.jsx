@@ -1,8 +1,28 @@
+import React from "react";
+import Swal from "sweetalert2";
+
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form submitted");
+    Swal.fire({
+      title: "Loading...",
+      icon: "success",
+      text: "Please wait while we log you in.",
+      allowOutsideClick: false,
+      onBeforeOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    setTimeout(() => {
+      Swal.close();
+      navigate("/");
+    }, 2000);
   };
+
   return (
     <div className="h-screen w-full flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
@@ -22,7 +42,7 @@ const Login = () => {
           </h2>
           <div className="mb-4">
             <label
-              htmlFor="registration-number "
+              htmlFor="registration-number"
               className="text-white text-xs-extra"
             >
               Registration Number
