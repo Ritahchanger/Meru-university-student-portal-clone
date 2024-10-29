@@ -4,6 +4,11 @@
   background: var(--backgroundOne);
   overflow-y: scroll;
   position: fixed;
+  left:-100%;
+  transition:all 0.3s;
+}
+.sidebar.active{
+  left:0;
 }
 
 .sidebar ul li a {
@@ -48,7 +53,15 @@
 
   .sidebar{
 
-    display:none;
+    left:-100%;
+  
+  }
+  
+  .sidebar.active{
+
+    left:0;
+
+    z-index:9;
   
   }
   

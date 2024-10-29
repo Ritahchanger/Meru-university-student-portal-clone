@@ -7,7 +7,7 @@ const store  = configureStore({
 
     reducer:{
 
-        sidebar:SideBarSlice.reducers
+        sidebar:SideBarSlice.reducer
 
     }
 

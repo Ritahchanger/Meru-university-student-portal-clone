@@ -1,22 +1,18 @@
-import React from "react";
-
-import { Link } from "react-router-dom";
-
 import "./Home.css";
-
 import StudentDashNavbar from "../../../components/dashboard/student/StudentDashNavbar/StudentDashNavbar";
 import StudentDashSidebar from "../../../components/dashboard/student/StudentDashSidebar/StudentDashSidebar";
 import PersonalInformation from "../../../components/dashboard/student/PersonalInformation/PersonalInformation";
 import ContactInformation from "../../../components/dashboard/student/ContactInformation/ContactInformation";
 import WifiInformation from "../../../components/dashboard/student/WifiInformation/WifiInformation";
 import FeeStatement from "../../../components/dashboard/student/FeeStatement/FeeStatement";
-
+import { useSelector } from "react-redux";
 const Home = () => {
+  const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
   return (
     <div className="home">
       <StudentDashNavbar />
       <StudentDashSidebar />
-      <div className="main">
+      <div className={`main ${!isSidebarShown ? 'mobile' : ''}`}>
         <div className="outer-grid">
           <PersonalInformation />
           <div className="center-container">

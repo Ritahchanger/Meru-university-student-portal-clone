@@ -57,6 +57,10 @@ ul {
 .main {
   width: calc(100% - 250px);
   float: right;
+  transition:all 0.5s;
+}
+.main.mobile{
+  width:100%;
 }
 .units{
   font-size:2rem;

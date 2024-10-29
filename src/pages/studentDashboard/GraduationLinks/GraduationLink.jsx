@@ -4,14 +4,22 @@ import StudentDashNavbar from "../../../components/dashboard/student/StudentDash
 
 import StudentDashSidebar from "../../../components/dashboard/student/StudentDashSidebar/StudentDashSidebar";
 
+import { useSelector } from "react-redux";
+
 const GraduationLink = () => {
+  const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
+
   return (
     <div className="graduation-links">
       <StudentDashNavbar />
 
       <StudentDashSidebar />
 
-      <div className="main border border-neutral-400 pb-[1rem]">
+      <div
+        className={`main border border-neutral-400 pb-[1rem] ${
+          !isSidebarShown ? "mobile" : ""
+        }`}
+      >
         <div
           className="py-[0.5rem] px-[1rem] custom-orange "
           style={{
@@ -37,7 +45,8 @@ const GraduationLink = () => {
               className="text-xs-extra bg-blue-500 text-white px-[1rem] py-[0.5rem] rounded-md inline-block"
             >
               Watch The 11th Graduation Ceremony On Facebook Live
-            </a> {""}
+            </a>{" "}
+            {""}
             or copy
             https://www.facebook.com/MeruUniversity/videos/3540978916047344
           </p>
@@ -50,9 +59,9 @@ const GraduationLink = () => {
               className="text-xs-extra bg-pink-600 text-white px-[1rem] py-[0.5rem] rounded-md inline-block"
             >
               Watch The 11th Graduation Stream On Youtube
-            </a> {""}
-            or copy
-            https://www.youtube.com/watch?v=aIo-6KWRlh4
+            </a>{" "}
+            {""}
+            or copy https://www.youtube.com/watch?v=aIo-6KWRlh4
           </p>
         </div>
       </div>

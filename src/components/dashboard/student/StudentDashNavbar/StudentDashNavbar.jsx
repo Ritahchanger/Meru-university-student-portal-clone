@@ -3,7 +3,16 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import "./StudentDashNavbar.css";
 import { FaEllipsisH } from "react-icons/fa";
 import { Fragment } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import { toggleSidebar } from "../../../../store/features/SidebarSlice";
 const StudentDashNavbar = () => {
+  const dispatch = useDispatch();
+
+  const handleSidebarToggling = () => {
+    dispatch(toggleSidebar());
+  };
+
   return (
     <Fragment>
       <div className="navbar">
@@ -15,7 +24,12 @@ const StudentDashNavbar = () => {
               alt=""
             />
             <div className="toggle-menu desktop">
-              <button className="menu-icon desktop">&#9776;</button>
+              <button
+                className="menu-icon desktop"
+                onClick={handleSidebarToggling}
+              >
+                &#9776;
+              </button>
             </div>
           </div>
 
@@ -23,7 +37,10 @@ const StudentDashNavbar = () => {
 
           <div className="left-card mobile">
             <div className="toggle-menu">
-              <button className="menu-icon left">
+              <button
+                className="menu-icon left"
+                onClick={handleSidebarToggling}
+              >
                 &#9776;
               </button>
             </div>

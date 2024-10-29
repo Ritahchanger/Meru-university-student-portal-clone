@@ -1,9 +1,13 @@
 import "./StudentDashSidebar.css";
 import { Link } from "react-router-dom";
 import sidebarData from "../../../../Data/SidebarData";
+import { useSelector } from "react-redux";
 const StudentDashSidebar = () => {
+
+  const isSidebarShown = useSelector((state) =>state.sidebar.isSidebarShown);
+  
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isSidebarShown ? "active" : ''}`}>
       <div className="sidebar-content">
         {sidebarData.map((item, index) => (
           <div className="sidebar-card">
