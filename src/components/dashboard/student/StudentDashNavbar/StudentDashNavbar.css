@@ -79,3 +79,13 @@
   transform: translate(-50%, -50%);
 }
 
+
+
+@media(max-width:820px){
+  .navbar .container .profile-card{
+    display:none;
+  }
+  .navbar .container .left-card{
+    width:100%;
+  }
+}
