@@ -45,7 +45,7 @@ const GraduationLink = () => {
         <div className="m-[1rem] pb-[1rem] border-b border-neutral-400">
           <p className="text-xs-extra">
             <a
-              href="https://www.facebook.com/MeruUniversity/videos/3540978916047344"
+              href="https://www.youtube.com/watch?v=aIo-6KWRlh4"
               target="_blank"
               className="text-xs-extra bg-pink-600 text-white px-[1rem] py-[0.5rem] rounded-md inline-block"
             >
