@@ -38,7 +38,7 @@ const Receipts = () => {
           then click <a href="#">"Print Selected"</a> to print.
         </p>
 
-        <button className="bg-green-600  mt-8 text-white p-[0.5rem] text-xs-extra py-[0.2rem]">
+        <button className="bg-green-600  mt-5 text-white p-[0.5rem] text-xs-extra py-[0.2rem]">
           Print Selected
         </button>
 

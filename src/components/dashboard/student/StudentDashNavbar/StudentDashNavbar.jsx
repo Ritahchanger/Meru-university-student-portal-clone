@@ -69,7 +69,7 @@ const StudentDashNavbar = () => {
               />
             </div>
 
-            <p className="text-sm tracking-wider">ABIGAIL ALEX |</p>
+            <p className="text-xs-extra tracking-wider">DENNIS PETER |</p>
             <div className="dropdown">
               <span>
                 <RiArrowDropDownLine />

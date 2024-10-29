@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
 
-    isSidebarShown: true,
-    
+    isSidebarShown: window.innerWidth > 820,
+
 };
 
 const SideBarSlice = createSlice({
