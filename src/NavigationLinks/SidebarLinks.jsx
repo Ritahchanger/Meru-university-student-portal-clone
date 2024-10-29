@@ -1,5 +1,5 @@
 const sideBarLinks = {
-    home: "",
+    home:"",
 
     graduationLinks: "/student/graduation-links",
 
