@@ -22,46 +22,46 @@ const PersonalInformation = () => {
         </button>
       </div>
       <ul>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>{studentInformation.name}</p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">Reg No:</span>
             {studentInformation.regNo}
           </p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">ID/Passport:</span>
             {studentInformation.idNo}
           </p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">Campus:</span>
             {studentInformation.Campus}
           </p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">Gender:</span>
             {studentInformation.gender}
           </p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">DOB:</span>
             {studentInformation.dob}
           </p>
         </li>
-        <li>
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">County:</span>
             {studentInformation.county}
           </p>
-        </li>
-        <li>
+        </li >
+        <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">Nationality:</span>
             {studentInformation.nationality}

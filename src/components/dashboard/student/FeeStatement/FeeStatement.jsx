@@ -1,7 +1,7 @@
 const FeeStatement = () => {
   return (
     <>
-      <h3 className="subtitle pb-[1rem] border-b border-neutral-400">
+      <h3 className="subtitle pb-[1rem] border-b border-neutral-400 font-semibold text-sm">
         Fee payment
       </h3>
       <div className="pb-[1rem] border-b border-neutral-400">

@@ -22,12 +22,16 @@ const Home = () => {
           <div className="center-container">
             <div className="grid">
               <div className="card-2">
-                <h3 className="subtitle">Units Registered (current sem)</h3>
-                <p className="units">8</p>
+                <h3 className="subtitle font-semibold text-sm">
+                  Units Registered (current sem)
+                </h3>
+                <p className="units border-t border-neutral-400">8</p>
               </div>
               <div className="card-2">
-                <h3 className="subtitle">Units Registered (previous sem)</h3>
-                <p className="units">43</p>
+                <h3 className="subtitle font-semibold text-sm">
+                  Units Registered (previous sem)
+                </h3>
+                <p className="units border-t border-neutral-400">43</p>
               </div>
               <div className="card-2">
                 <WifiInformation />
@@ -38,6 +42,31 @@ const Home = () => {
             </div>
           </div>
           <ContactInformation />
+        </div>
+        <div className=" my-[1.5rem] mr-[1.5rem] ml-[1.5rem] custom-shadow p-[1rem]">
+          <p className="text-sm font-semibold py-[1rem] border-b border-neutral-300">
+            More about Eduroam
+          </p>
+          <div className="flex flex-wrap gap-[10px]">
+            <div className="video-responsive w-full sm:w-1/2">
+              <iframe
+                src="https://www.youtube.com/embed/SROWWjrSqUk"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="video-responsive w-full sm:w-1/2">
+              <iframe
+                src="https://www.youtube.com/embed/SROWWjrSqUk"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
