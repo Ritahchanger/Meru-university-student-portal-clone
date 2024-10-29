@@ -47,9 +47,11 @@ const Home = () => {
           <p className="text-sm font-semibold py-[1rem] border-b border-neutral-300">
             More about Eduroam
           </p>
-          <div className="flex flex-wrap gap-[10px]">
-            <div className="video-responsive w-full sm:w-1/2">
+          <div className="flex flex-col md:flex-row gap-[10px]">
+            <div className="video-container w-full md:w-1/2">
               <iframe
+                width="100%"
+                height="315"
                 src="https://www.youtube.com/embed/SROWWjrSqUk"
                 title="YouTube video player"
                 frameBorder="0"
@@ -57,8 +59,10 @@ const Home = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="video-responsive w-full sm:w-1/2">
+            <div className="video-container w-full md:w-1/2">
               <iframe
+                width="100%"
+                height="315"
                 src="https://www.youtube.com/embed/SROWWjrSqUk"
                 title="YouTube video player"
                 frameBorder="0"
