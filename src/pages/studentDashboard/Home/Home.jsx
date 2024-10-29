@@ -17,26 +17,28 @@ const Home = () => {
       <StudentDashNavbar />
       <StudentDashSidebar />
       <div className="main">
-        <PersonalInformation />
-        <div className="center-container">
-          <div className="grid">
-            <div className="card-2">
-              <h3 className="subtitle">Units Registered (current sem)</h3>
-              <p className="units">8</p>
-            </div>
-            <div className="card-2">
-              <h3 className="subtitle">Units Registered (previous sem)</h3>
-              <p className="units">43</p>
-            </div>
-            <div className="card-2">
-              <WifiInformation />
-            </div>
-            <div className="card-2">
-             <FeeStatement/>
+        <div className="outer-grid">
+          <PersonalInformation />
+          <div className="center-container">
+            <div className="grid">
+              <div className="card-2">
+                <h3 className="subtitle">Units Registered (current sem)</h3>
+                <p className="units">8</p>
+              </div>
+              <div className="card-2">
+                <h3 className="subtitle">Units Registered (previous sem)</h3>
+                <p className="units">43</p>
+              </div>
+              <div className="card-2">
+                <WifiInformation />
+              </div>
+              <div className="card-2">
+                <FeeStatement />
+              </div>
             </div>
           </div>
+          <ContactInformation />
         </div>
-        <ContactInformation />
       </div>
     </div>
   );
