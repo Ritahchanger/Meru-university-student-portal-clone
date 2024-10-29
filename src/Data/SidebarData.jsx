@@ -23,7 +23,7 @@ const sidebarData = [
       {
         subTitle: "Dashboard",
         icon: <MdDashboard />,
-        path:"/",
+        path: "/",
       },
       {
         subTitle: "Graduation Links",
@@ -38,7 +38,7 @@ const sidebarData = [
       {
         subTitle: "Fee Statement",
         icon: <FaFileInvoiceDollar />,
-        path: '/student/fee/statement',
+        path: "#",
       },
       {
         subTitle: "Receipts",

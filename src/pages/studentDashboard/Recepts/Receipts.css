@@ -1,0 +1,10 @@
+.receipts .table-wrapper {
+  width: 100%;
+
+  overflow-x: scroll;
+}
+.receipts .table-wrapper table {
+  min-width: 410px;
+
+  overflow-x: scroll;
+}

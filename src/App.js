@@ -8,6 +8,8 @@ import GraduationLink from './pages/studentDashboard/GraduationLinks/GraduationL
 
 import sideBarLinks from './NavigationLinks/SidebarLinks'
 
+import Receipts from './pages/studentDashboard/Recepts/Receipts'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +19,9 @@ const App = () => {
       <Route path={sideBarLinks.home} element={<Home/> } />
 
       <Route path={sideBarLinks.graduationLinks} element={<GraduationLink/> } />
+
+      <Route path={sideBarLinks.graduationLinks} element={<GraduationLink/> } />
+      <Route path={sideBarLinks.receipts} element={<Receipts/> } />
 
     </Routes>
 
