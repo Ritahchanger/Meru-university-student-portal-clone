@@ -1,12 +1,12 @@
 import ProfileIcon from "../../../../Assets/images/profileIcon.png";
 import "./PersonalInformation.css";
 const studentInformation = {
-  name: "MUNYAO PETER DENNIS",
-  regNo: "CT201/106094/21",
-  idNo: "39688058",
+  name: "PETER DENNIS MUNYAO",
+  regNo: "CT201/11111/11",
+  idNo: "00000000",
   Campus: "MAIN",
   gender: "Male",
-  dob: "29/10/2002",
+  dob: "29/10/1928",
   county: "MAKUENI",
   nationality: "KEN",
   registeredUnits: [{ thisSem: 8 }, { lastSem: 43 }],

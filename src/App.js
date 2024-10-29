@@ -18,7 +18,6 @@ const App = () => {
 
       <Route path={sideBarLinks.graduationLinks} element={<GraduationLink/> } />
 
-
     </Routes>
 
     </BrowserRouter>

@@ -1,5 +1,16 @@
-import { MdDashboard, MdPayment, MdSchool, MdSettings, MdHelpOutline } from "react-icons/md";
-import { FaUniversity, FaFileInvoiceDollar, FaClipboardList, FaChalkboardTeacher } from "react-icons/fa";
+import {
+  MdDashboard,
+  MdPayment,
+  MdSchool,
+  MdSettings,
+  MdHelpOutline,
+} from "react-icons/md";
+import {
+  FaUniversity,
+  FaFileInvoiceDollar,
+  FaClipboardList,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import { IoReceiptOutline } from "react-icons/io5";
 import { IoIosPeople, IoIosPaper } from "react-icons/io";
 import { BsFillHouseDoorFill, BsCardChecklist } from "react-icons/bs";
@@ -12,10 +23,12 @@ const sidebarData = [
       {
         subTitle: "Dashboard",
         icon: <MdDashboard />,
+        path: "",
       },
       {
         subTitle: "Graduation Links",
         icon: <FaUniversity />,
+        path: "/student/graduation-links",
       },
     ],
   },
@@ -25,14 +38,17 @@ const sidebarData = [
       {
         subTitle: "Fee Statement",
         icon: <FaFileInvoiceDollar />,
+        path: '/student/fee/statement"',
       },
       {
         subTitle: "Receipts",
         icon: <IoReceiptOutline />,
+        path: "/student/fee/receipts",
       },
       {
         subTitle: "Fee Payment Letter",
         icon: <MdPayment />,
+        path: "/student/fee/payment/letter",
       },
     ],
   },
@@ -42,6 +58,7 @@ const sidebarData = [
       {
         subTitle: "Unit Registration",
         icon: <FaClipboardList />,
+        path: "/student/units/registration",
       },
       {
         subTitle: "Lectures Evaluation",

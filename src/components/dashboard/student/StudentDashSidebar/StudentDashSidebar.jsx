@@ -9,9 +9,9 @@ const StudentDashSidebar = () => {
           <div className="sidebar-card">
             <p className="card-title">{item.title}</p>
             <ul>
-              {item.sidebarPages.map((insideItem, inde) => (
-                <li>
-                  <Link to="#">
+              {item.sidebarPages.map((insideItem, customID) => (
+                <li key={customID}>
+                  <Link to={insideItem.path}>
                     <span>{insideItem.icon}</span>
                     {insideItem.subTitle}
                   </Link>

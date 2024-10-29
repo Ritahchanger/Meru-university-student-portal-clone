@@ -8,19 +8,19 @@ const FeeStatement = () => {
         <div className="custom-orange px-[1rem] py-[0.5rem]">
           <p className="text-sm">
             <span className="text-neutral-900 font-semibold">Total Billed</span>{" "}
-            = Ksh.186,800.00
+            = Ksh.350,800.00
           </p>
         </div>
         <div className="bg-green-500  px-[1rem] py-[0.5rem]">
           <p className="text-sm">
             <span className="text-neutral-900 font-semibold">Total Paid</span> =
-            Ksh.186,800.00
+            Ksh.350,800.00
           </p>
         </div>
         <div className="custom-orange px-[1rem] py-[0.5rem]">
           <p className="text-sm">
             <span className="text-neutral-900 font-semibold">Fee Balance</span>{" "}
-            = Ksh.186,800.00
+            = Ksh.00.00
           </p>
         </div>
         <div className="mt-[1rem] pt-[1rem] border-t border-neutral-400 flex justify-between items-center sm:flex-col">

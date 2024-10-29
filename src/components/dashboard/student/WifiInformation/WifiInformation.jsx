@@ -12,7 +12,7 @@ const WifiInformation = () => {
         <div className="border-b border-neutral-300 p-[1rem]">
           <p className="text-neutral-700">
             Wifi Username:
-            <span className="font-semibold text-neutral-900">pbkmdkedfw4</span>
+            <span className="font-semibold text-neutral-900">pbkmdSedfw4</span>
           </p>
         </div>
         <div className="border-b border-neutral-300 p-[1rem]">
