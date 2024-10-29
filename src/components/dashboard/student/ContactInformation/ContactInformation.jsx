@@ -4,7 +4,7 @@ const contactInformation = {
 };
 const ContactInformation = () => {
   return (
-    <div className="contact-information">
+    <div className="contact-information text-sm">
       <div className="p-[1rem] custom-shadow">
         <h3 className="subtitle">Contact Information</h3>
         <div className="border border-neutral-300">
@@ -31,7 +31,7 @@ const ContactInformation = () => {
           </div>
         </div>
       </div>
-      <div className="p-[1rem] custom-shadow mt-[10px]">
+      <div className="p-[1rem] custom-shadow mt-[10px] text-sm">
         <p>Quick Help and Links</p>
         <div className="border border-neutral-400">
           <div className="border-b border-neutral-400 p-[1rem]">

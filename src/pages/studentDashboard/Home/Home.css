@@ -21,11 +21,11 @@
 }
 
 .home .main .center-container .grid {
+
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 10px;
+  
 }
 .home .main .center-container .grid .card-2 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);

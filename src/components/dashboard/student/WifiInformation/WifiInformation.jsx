@@ -4,8 +4,8 @@ const WifiInformation = () => {
       <h3 className="subtitle mb-2 border-b border-neutral-400">
         Wifi information
       </h3>
-      <div className="border border-neutral-400">
-        <div className="border-b border-neutral-400 p-[1rem]">
+      <div className="border border-neutral-400 text-sm">
+        <div className="border-b border-neutral-400 p-[1rem] ">
           <p className="text-neutral-700">Wifi Username</p>
           <p className="text-neutral-900">munyaopeter@students.must.ac.ke</p>
         </div>
