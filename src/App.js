@@ -10,11 +10,15 @@ import sideBarLinks from './NavigationLinks/SidebarLinks'
 
 import Receipts from './pages/studentDashboard/Recepts/Receipts'
 
+import Login from './pages/Authentication/Login/Login'
+
 const App = () => {
   return (
     <BrowserRouter>
 
     <Routes>
+
+      <Route path="/auth/login" element={<Login/>} />
 
       <Route path={sideBarLinks.home} element={<Home/> } />
 

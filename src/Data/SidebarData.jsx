@@ -48,7 +48,7 @@ const sidebarData = [
       {
         subTitle: "Fee Payment Letter",
         icon: <MdPayment />,
-        path: "/student/fee/payment/letter",
+        path: "#",
       },
     ],
   },
