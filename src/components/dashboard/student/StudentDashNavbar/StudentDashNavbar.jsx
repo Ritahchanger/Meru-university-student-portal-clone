@@ -1,5 +1,5 @@
 import AssetsExporter from "../../../../Assets/AssetsExport";
-import { MdOutlineArrowDropDownCircle } from "react-icons/md";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import "./StudentDashNavbar.css";
 import { Fragment } from "react";
 const StudentDashNavbar = () => {
@@ -18,7 +18,7 @@ const StudentDashNavbar = () => {
             </div>
           </div>
           <div className="profile-card">
-            <div className="profile-icon">
+            <div className="profile-icon mr-[1rem]">
               <img
                 src={AssetsExporter.profileIcon}
                 className="icon-image"
@@ -26,10 +26,10 @@ const StudentDashNavbar = () => {
               />
             </div>
 
-            <p className="username">ABIGAIL ALEX |</p>
+            <p className="text-sm tracking-wider">ABIGAIL ALEX |</p>
             <div className="dropdown">
               <span>
-                <MdOutlineArrowDropDownCircle />
+                <RiArrowDropDownLine/>
               </span>
             </div>
           </div>
