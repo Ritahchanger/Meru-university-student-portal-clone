@@ -67,7 +67,10 @@ const StudentDashNavbar = () => {
               alt=""
             />
             <div className="toggle-menu">
-              <button className="menu-icon right cursor-pointer" onClick={handleProfileCard}>
+              <button
+                className="menu-icon right cursor-pointer"
+                onClick={handleProfileCard}
+              >
                 <span>
                   <FaEllipsisH />
                 </span>
@@ -78,7 +81,9 @@ const StudentDashNavbar = () => {
           {/* mobile navigation */}
 
           <div
-            className="profile-card border-b border-green-700 relative "
+            className={`profile-card border-b border-green-700 relative ${
+              showProfileCard ? "active " : ""
+            }`}
             onClick={toggleDropdown}
           >
             <div className="profile-icon mr-[1rem]">
