@@ -1,6 +1,20 @@
 import Swal from "sweetalert2";
+import ModalUnits from "../../../modals/ModalUnits";
+
+import { useDispatch } from "react-redux";
+
+import { showUnitsRegistrationModal } from "../../../../store/features/UnitsRegistrationSlice";
 
 const UnitsRegistration = () => {
+
+    const dispatch = useDispatch()
+
+    const handleShowUnitsRegistrationModal = () =>{
+  
+      dispatch(showUnitsRegistrationModal(null))
+  
+    }
+
   const handleGetUnits = () => {
     const regType = document.querySelector('select[name="regType"]').value;
     if (!regType) {
@@ -11,7 +25,7 @@ const UnitsRegistration = () => {
         confirmButtonText: "Okay",
       });
     } else {
-      
+      handleShowUnitsRegistrationModal()
     }
   };
 
@@ -63,6 +77,8 @@ const UnitsRegistration = () => {
       <p className="p-[0.5rem] border border-neutral-300 text-xs-extra">
         NO SELECTED UNITS FOUND
       </p>
+      
+      <ModalUnits/>
     </div>
   );
 };

@@ -9,11 +9,16 @@ import Courses from "../../../components/dashboard/student/Courses/Courses";
 import UnitsRegistration from "../../../components/dashboard/student/UnitsRegistration/UnitsRegistration";
 import ModalUnits from "../../../components/modals/ModalUnits";
 
+import "./CourseRegistration.css"
+
+
+
 const CourseRegistration = () => {
   const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
+ 
 
   return (
-    <div className="graduation-links">
+    <div className="graduation-links course">
       <StudentDashNavbar />
 
       <StudentDashSidebar />
@@ -81,7 +86,7 @@ const CourseRegistration = () => {
         <UnitsRegistration/>
       </div>
 
-     <ModalUnits/>
+    
     </div>
   );
 };

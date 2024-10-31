@@ -61,7 +61,7 @@ const Courses = () => {
   ];
 
   return (
-    <div className="p-[1rem]">
+    <div className="p-[1rem] ">
       <h3 className="subtitle font-semibold text-sm">
         Course Registration List
       </h3>

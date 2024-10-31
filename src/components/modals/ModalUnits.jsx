@@ -1,14 +1,28 @@
 import "./modalUnits.css";
 
+import { useSelector } from "react-redux";
+
+import { useDispatch } from "react-redux";
+
+import { hideUnitsRegistrationSlice } from "../../store/features/UnitsRegistrationSlice";
+
 const dummyUnits = Array.from({ length: 20 }, (_, index) => ({
   unitName: `Unit Name ${index + 1}`,
   unitCode: `Code ${index + 1}`,
-  department: `Department ${Math.floor(Math.random() * 5) + 1}`, // Random department for variety
+  department: `Department ${Math.floor(Math.random() * 5) + 1}`, 
 }));
 
 const ModalUnits = () => {
+
+  const dispatch = useDispatch();
+
+  const  isRegistrationModalShown = useSelector((state)=>state.registrationSlice.isRegistrationModalShown)
+
+  const handeUnitsRegistrationModal = () =>{
+    dispatch(hideUnitsRegistrationSlice())
+  }
   return (
-    <div className="modal">
+    <div className={`modal ${isRegistrationModalShown ? 'active' : null}`}>
       <div className="modal-wrapper">
         <h3 className="text-center text-orange-500 font-semibold pb-[0.3rem] border-b border-orange-500">
           SELECT UNITS TO DO
@@ -44,10 +58,10 @@ const ModalUnits = () => {
             </tbody>
           </table>
           <div className="flex">
-            <button className="text-sm py-[0.3rem] px-[2rem] bg-green-700 rounded-sm text-white mt-[1rem]">
+            <button className="text-sm py-[0.3rem] px-[2rem] bg-green-700 rounded-sm text-white mt-[1rem]" onClick={handeUnitsRegistrationModal}>
               Done
             </button>
-            <button className="text-sm py-[0.3rem] px-[2rem] bg-red-700 rounded-sm text-white mt-[1rem] ml-[1rem]">
+            <button className="text-sm py-[0.3rem] px-[2rem] bg-red-700 rounded-sm text-white mt-[1rem] ml-[1rem]" onClick={handeUnitsRegistrationModal}>
               Cancel
             </button>
           </div>

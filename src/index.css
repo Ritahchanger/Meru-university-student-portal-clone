@@ -81,10 +81,13 @@ ul {
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
   align-items: center;
-  display:flex;
+  display:none;
   z-index: 99;
   top: 0;
   justify-content:center;
+  left:0;
+
+  right:0;
 }
 
 .modal-wrapper{
