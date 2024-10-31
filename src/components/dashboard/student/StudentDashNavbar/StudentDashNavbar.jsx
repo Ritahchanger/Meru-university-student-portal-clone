@@ -14,8 +14,14 @@ import { toggleSidebar } from "../../../../store/features/SidebarSlice";
 const StudentDashNavbar = () => {
   const dispatch = useDispatch();
 
+  const [showProfileCard, setShowProfileCard] = useState(false);
+
   const handleSidebarToggling = () => {
     dispatch(toggleSidebar());
+  };
+
+  const handleProfileCard = () => {
+    setShowProfileCard((prev) => !prev);
   };
 
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -27,7 +33,7 @@ const StudentDashNavbar = () => {
   return (
     <Fragment>
       <div className="navbar">
-        <div className="container">
+        <div className="container relative">
           <div className="left-card desktop">
             <img
               src="https://student.must.ac.ke/img/Logo.png"
@@ -61,7 +67,7 @@ const StudentDashNavbar = () => {
               alt=""
             />
             <div className="toggle-menu">
-              <button className="menu-icon right">
+              <button className="menu-icon right cursor-pointer" onClick={handleProfileCard}>
                 <span>
                   <FaEllipsisH />
                 </span>
@@ -71,7 +77,10 @@ const StudentDashNavbar = () => {
 
           {/* mobile navigation */}
 
-          <div className="profile-card relative " onClick={toggleDropdown}>
+          <div
+            className="profile-card border-b border-green-700 relative "
+            onClick={toggleDropdown}
+          >
             <div className="profile-icon mr-[1rem]">
               <img
                 src={AssetsExporter.profileIcon}
@@ -80,7 +89,14 @@ const StudentDashNavbar = () => {
               />
             </div>
 
-            <p className="text-xs-extra tracking-wider">DENNIS PETER |</p>
+            <p className="text-xs-extra tracking-wider profile-name desktop">
+              DENNIS PETER |
+            </p>
+
+            <p className="text-xs-extra tracking-wider profile-name mobile">
+              DENNIS PETER
+            </p>
+
             <div className="dropdown">
               <span>
                 <RiArrowDropDownLine />

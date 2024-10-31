@@ -106,10 +106,35 @@
   display: none;
 }
 
+
+.navbar .profile-name.mobile{
+  display:none;
+}
+
 @media (max-width: 820px) {
   .navbar .container .profile-card {
-    display: none;
+    position:absolute;
+    top:100%;
+    background:var(--backgroundOne);
+    width:100%;  
+    padding:0.3rem ;
+    opacity:0;
+    height:0;
+    transition:all 0.5s;
   }
+  .navbar .container .profile-card.active{
+    opacity:1;
+    height:fit-content;
+  }
+
+  .navbar .profile-name.mobile{
+    display:block;
+   
+  }
+  .navbar .profile-name.desktop{
+    display:none;
+  }
+  
   .navbar .container .left-card {
     width: 100%;
   }
