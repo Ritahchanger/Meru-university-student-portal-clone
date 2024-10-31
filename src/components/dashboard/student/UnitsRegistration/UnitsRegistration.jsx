@@ -1,4 +1,20 @@
+import Swal from "sweetalert2";
+
 const UnitsRegistration = () => {
+  const handleGetUnits = () => {
+    const regType = document.querySelector('select[name="regType"]').value;
+    if (!regType) {
+      Swal.fire({
+        icon: "warning",
+        title: "Registration Type Required",
+        text: "Please choose a registration type before proceeding.",
+        confirmButtonText: "Okay",
+      });
+    } else {
+      
+    }
+  };
+
   return (
     <div className="p-[1rem]">
       <h3 className="subtitle font-semibold text-sm underline">
@@ -6,12 +22,12 @@ const UnitsRegistration = () => {
       </h3>
       <div className="px-[1rem] py-[0.6rem] bg-blue-500 rounded-md">
         <a href="#" className="text-xs-extra">
-          Having Trouble with Unit Registration? Click Here for to View How to
+          Having Trouble with Unit Registration? Click Here to View How to
         </a>
       </div>
 
       <p className="text-sm my-[1rem]">
-        Registration Semester: {""}{" "}
+        Registration Semester: {""}
         <span className="text-green-600">SEM1-2024/2025</span>
       </p>
 
@@ -30,11 +46,15 @@ const UnitsRegistration = () => {
           <option value="">--Registration Type--</option>
           <option value="units">Units Registration</option>
         </select>
-        <button className="text-sm py-[0.6rem] px-[1rem] bg-red-500 rounded-md text-white mt-[1rem] md:mt-0">
+        <button
+          className="text-sm py-[0.6rem] px-[1rem] bg-red-500 rounded-md text-white mt-[1rem] md:mt-0"
+          onClick={handleGetUnits}
+        >
           Get Units To Register
         </button>
       </div>
-      <button className="text-sm py-[0.6rem] px-[1rem] bg-red-500 rounded-md text-white mt-[1rem] ">
+
+      <button className="text-sm py-[0.6rem] px-[1rem] bg-red-500 rounded-md text-white mt-[1rem]">
         Complete Registration
       </button>
       <p className="my-2 text-neutral-400 text-sm">

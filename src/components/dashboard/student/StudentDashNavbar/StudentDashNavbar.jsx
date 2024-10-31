@@ -9,10 +9,14 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
+import Swal from "sweetalert2";
+
 import { FaTachometerAlt, FaSignOutAlt } from "react-icons/fa";
 import { toggleSidebar } from "../../../../store/features/SidebarSlice";
 const StudentDashNavbar = () => {
   const dispatch = useDispatch();
+
+  const [regType, setRegType] = useState("");
 
   const [showProfileCard, setShowProfileCard] = useState(false);
 
@@ -29,6 +33,8 @@ const StudentDashNavbar = () => {
   const toggleDropdown = () => {
     setDropdownVisible((prev) => !prev);
   };
+
+
 
   return (
     <Fragment>

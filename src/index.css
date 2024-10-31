@@ -20,11 +20,9 @@
 .custom-orange {
   background: var(--backgroundFour);
 }
-
 .custom-shadow {
   box-shadow: var(--custom-shadow);
 }
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -37,23 +35,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 .container {
   max-width: 100%;
-
   width: 100%;
-
   margin: 0 auto;
 }
-
 img {
   width: 100%;
 }
-
 ul {
   list-style: none;
 }
-
 .main {
   width: calc(100% - 250px);
   float: right;
@@ -73,17 +65,41 @@ ul {
     width: 100%;
   }
 }
-
-
 .table-wrapper {
   width: 100%;
-
   overflow-x: scroll;
 }
 
 .table-wrapper table {
   min-width: 410px;
-
   overflow-x: scroll;
 }
 
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  align-items: center;
+  display:flex;
+  z-index: 99;
+  top: 0;
+  justify-content:center;
+}
+
+.modal-wrapper{
+
+  background:#fff;
+
+  max-width:700px;
+
+  width:96%;
+
+  overflow-y: scroll;
+
+  max-height:calc(100vh - 200px);
+
+  height:fit-content;
+
+  padding:1rem;
+}
