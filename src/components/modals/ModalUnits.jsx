@@ -43,9 +43,14 @@ const ModalUnits = () => {
               ))}
             </tbody>
           </table>
-          <button className="text-sm py-[0.3rem] px-[2rem] bg-green-700 rounded-sm text-white mt-[1rem]">
-            Done
-          </button>
+          <div className="flex">
+            <button className="text-sm py-[0.3rem] px-[2rem] bg-green-700 rounded-sm text-white mt-[1rem]">
+              Done
+            </button>
+            <button className="text-sm py-[0.3rem] px-[2rem] bg-red-700 rounded-sm text-white mt-[1rem] ml-[1rem]">
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     </div>
