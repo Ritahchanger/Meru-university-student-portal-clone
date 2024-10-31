@@ -13,6 +13,7 @@ This project is a clone of our university's student portal interface. The projec
 7. [Available Scripts](#available-scripts)
 8. [Contributing](#contributing)
 9. [License](#license)
+10. [Progress Status](#progress-status)
 
 ## Features
 
@@ -59,7 +60,7 @@ Clone the repository:
 
    ```bash
    git clone https://github.com/Ritahchanger/Meru-university-student-portal-clone.git
-   ```
+```
 Install node_modules:
 
    ```bash
@@ -70,3 +71,9 @@ Run the application
 
 ```bash
 npm run start
+
+```
+## Progress Status
+
+The project is still under progress. I'm currently working on custom admin pages and the backend implementation, along with API consumption for dynamic data handling.
+
