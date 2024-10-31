@@ -10,7 +10,7 @@ const ContactInformation = () => {
         <div className="border border-neutral-300">
           <div className="p-3 border-b border-neutral-300">
             <p className="text-neutral-700">
-              Phone No:<span>0113174493</span>
+              Phone No:<span>01XXXXXXXX</span>
             </p>
           </div>
           <div className="p-3 border-b border-neutral-300">
