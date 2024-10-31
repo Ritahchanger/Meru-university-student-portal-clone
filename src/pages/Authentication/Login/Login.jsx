@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <div className="h-screen w-full flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-        <div className="w-full flex items-center justify-center mb-5">
+        <div className="w-full flex items-center justify-center mb-">
           <img
             src="https://student.must.ac.ke/img/Logo.png"
             alt=""
@@ -35,7 +35,7 @@ const Login = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="max-w-[600px] bg-green-500 w-[96%] p-4 rounded-lg shadow-lg"
+          className="max-w-[800px] bg-green-500 w-[96%] p-4 rounded-lg shadow-lg"
         >
           <h2 className="text-white text-center border-b border-neutral-100 text-lg font-bold mb-4">
             STUDENT LOGIN

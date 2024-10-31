@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import StudentDashNavbar from "../../../components/dashboard/student/StudentDashNavbar/StudentDashNavbar";
 import StudentDashSidebar from "../../../components/dashboard/student/StudentDashSidebar/StudentDashSidebar";
 import { useSelector } from "react-redux";
-
 import "./Receipts.css";
 
 const Receipts = () => {
@@ -21,7 +20,7 @@ const Receipts = () => {
   const handleCheckboxChange = (id) => {
     setSelectedReceipts((prev) => ({
       ...prev,
-      [id]: !prev[id], // Toggle selected state
+      [id]: !prev[id], 
     }));
   };
 

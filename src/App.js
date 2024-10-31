@@ -12,6 +12,8 @@ import Receipts from './pages/studentDashboard/Recepts/Receipts'
 
 import Login from './pages/Authentication/Login/Login'
 
+import CourseRegistration from './pages/studentDashboard/CourseRegistration/CourseRegistration'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,7 +27,10 @@ const App = () => {
       <Route path={sideBarLinks.graduationLinks} element={<GraduationLink/> } />
 
       <Route path={sideBarLinks.graduationLinks} element={<GraduationLink/> } />
+
       <Route path={sideBarLinks.receipts} element={<Receipts/> } />
+
+      <Route path={sideBarLinks.unitsRegistration} element={<CourseRegistration/> } />
 
     </Routes>
 
