@@ -73,3 +73,17 @@ ul {
     width: 100%;
   }
 }
+
+
+.table-wrapper {
+  width: 100%;
+
+  overflow-x: scroll;
+}
+
+.table-wrapper table {
+  min-width: 410px;
+
+  overflow-x: scroll;
+}
+
