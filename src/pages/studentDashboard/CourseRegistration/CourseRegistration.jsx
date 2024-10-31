@@ -6,6 +6,7 @@ import StudentDashSidebar from "../../../components/dashboard/student/StudentDas
 
 import { useSelector } from "react-redux";
 import Courses from "../../../components/dashboard/student/Courses/Courses";
+import UnitsRegistration from "../../../components/dashboard/student/UnitsRegistration/UnitsRegistration";
 
 const CourseRegistration = () => {
   const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
@@ -75,8 +76,8 @@ const CourseRegistration = () => {
             </ul>
           </div>
         </div>
-
         <Courses/>
+        <UnitsRegistration/>
       </div>
     </div>
   );
