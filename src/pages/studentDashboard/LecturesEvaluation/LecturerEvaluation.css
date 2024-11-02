@@ -1,0 +1,4 @@
+.lecturers-evaluation table tr:nth-child(even) td{
+    color:blue;
+    border:1px solid blue
+}

@@ -3,17 +3,19 @@ import StudentDashNavbar from "../../../components/dashboard/student/StudentDash
 import StudentDashSidebar from "../../../components/dashboard/student/StudentDashSidebar/StudentDashSidebar";
 import { useSelector } from "react-redux";
 
+import "./LecturerEvaluation.css"
+
 const LecturesEvaluation = () => {
   const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
 
   const lectures = Array.from({ length: 10 }, (_, index) => ({
     id: index + 1,
-    unit: `Unit ${index + 1}`,
-    description: `Description for Unit ${index + 1}`,
+    unit: `NLP ${index + 1}`,
+    description: `Description for NLP ${index + 1}`,
   }));
 
   return (
-    <div className="">
+    <div className="lecturers-evaluation">
       <StudentDashNavbar />
       <StudentDashSidebar />
       <div
