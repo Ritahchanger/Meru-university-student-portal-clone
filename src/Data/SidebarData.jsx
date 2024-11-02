@@ -1,7 +1,6 @@
 import {
   MdDashboard,
   MdPayment,
-  MdSchool,
   MdSettings,
   MdHelpOutline,
 } from "react-icons/md";
@@ -59,6 +58,11 @@ const sidebarData = [
         subTitle: "Unit Registration",
         icon: <FaClipboardList />,
         path: "/student/units/registration",
+      },
+      {
+        subTitle: "Academic requisitions",
+        icon: <FaClipboardList />,
+        path: "/student/academic/requisions",
       },
       {
         subTitle: "Lectures Evaluation",

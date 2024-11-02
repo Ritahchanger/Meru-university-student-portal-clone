@@ -58,6 +58,11 @@ ul {
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
+
+}
+.sub-header{
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
 }
 
 @media (max-width: 1132px) {

@@ -7,6 +7,8 @@ const sideBarLinks = {
 
     receipts: "/student/fee/receipts",
 
+    academicRequisions:"/student/academic/requisions",
+
     feePaymentLetter: "/student/fee/payment/letter",
 
     unitsRegistration: "/student/units/registration",
