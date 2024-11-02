@@ -16,6 +16,8 @@ import CourseRegistration from "./pages/studentDashboard/CourseRegistration/Cour
 
 import AcademicRequisition from "./pages/studentDashboard/AcademicRequision/AcademicRequision";
 
+import LecturesEvaluation from "./pages/studentDashboard/LecturesEvaluation/LecturesEvaluation";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -43,6 +45,10 @@ const App = () => {
         <Route
           path={sideBarLinks.academicRequisions}
           element={<AcademicRequisition />}
+        />
+        <Route
+          path={sideBarLinks.lecturesEvaluation}
+          element={<LecturesEvaluation/>}
         />
       </Routes>
     </BrowserRouter>

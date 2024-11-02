@@ -67,6 +67,7 @@ const sidebarData = [
       {
         subTitle: "Lectures Evaluation",
         icon: <FaChalkboardTeacher />,
+        path:"/student/lectures/evaluation"
       },
       {
         subTitle: "Industrial Attachment",
