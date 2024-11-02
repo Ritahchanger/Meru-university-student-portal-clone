@@ -15,6 +15,8 @@ import { IoIosPeople, IoIosPaper } from "react-icons/io";
 import { BsFillHouseDoorFill, BsCardChecklist } from "react-icons/bs";
 import { AiFillFilePdf, AiOutlineQuestionCircle } from "react-icons/ai";
 
+import sideBarLinks from "../NavigationLinks/SidebarLinks"
+
 const sidebarData = [
   {
     title: "Core",
@@ -72,6 +74,7 @@ const sidebarData = [
       {
         subTitle: "Industrial Attachment",
         icon: <IoIosPeople />,
+        path:sideBarLinks.industrialAttachment
       },
     ],
   },
