@@ -15,7 +15,7 @@
   display: flex;
   text-decoration: none;
   align-items: center;
-  text-align: center;
+  text-align:start;
   color: var(--black);
   font-size: 0.9rem;
   padding: 0.4rem 2rem;
@@ -32,7 +32,7 @@
 
 .sidebar ul li a span {
   display: flex;
-  align-items: center;
+  align-items:start;
   margin-right: 10px;
   font-size: 1.4rem;
 }
@@ -48,6 +48,10 @@
   color: var(--white);
 }
 
+.sidebar-content ul li .active {
+  background: #000; /* Change background to black for active state */
+  color:var(--backgroundFour); /* Optional: Change text color for better contrast */
+}
 
 @media(max-width:1132px){
 

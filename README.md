@@ -43,6 +43,10 @@ Here are some screenshots of the application:
 
 ![Grades and Transcripts](src/screenshots/screen6.png)
 *Receipts section*
+![Grades and Transcripts](src/screenshots/screen7.png)
+*Industrial Attachment*
+![Grades and Transcripts](src/screenshots/screen8.png)
+*Lectures Evaluation*
 
 ## Getting Started
 
