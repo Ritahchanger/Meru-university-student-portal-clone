@@ -1,14 +1,18 @@
-.modal.transit{
-    display:flex;
+.modal.transit {
+  display:none;
 }
-.modal.transit .modal-wrapper{
-    max-width:1200px;
+.modal.transit .modal-wrapper {
+  max-width: 1200px;
 
-    background:green;
+  background: green;
 
-    max-height:calc(100vh - 50px);
+  max-height: calc(100vh - 30px);
 
-    margin:1rem;
+  margin: 1rem;
 
-    border:3px solid #0eff00;
+  border: 3px solid #0eff00;
+}
+
+.modal.transit.active{
+    display:block;
 }

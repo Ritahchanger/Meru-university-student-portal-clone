@@ -1,6 +1,8 @@
 import React from "react";
 import "./TransitModal.css";
 
+import { useSelector,useDispatch } from "react-redux";
+
 const TransitModal = () => {
   // Sample data for units
   const units = [
@@ -66,8 +68,10 @@ const TransitModal = () => {
     window.print();
   };
 
+  const isTransitModalShown = useSelector((state)=>state.transitModal.isTransitModalShown)
+
   return (
-    <div className="modal transit bg-green-600">
+    <div className={`modal transit bg-green-600 ${isTransitModalShown ? 'active' : null}`}>
       <div className="modal-wrapper bg-green-600 relative m-[1rem] border-2 border-green-800">
         <button className="fixed top-[1rem] right-[1rem] h-[35px] w-[35px] bg-red-600 text-white text-2xl">
           &times;
@@ -102,7 +106,7 @@ const TransitModal = () => {
           </div>
           <table className="w-full">
             <thead>
-              <tr className="text-center font-semibold">
+              <tr className="text-start font-semibold">
                 <td className="px-4 py-2 border border-neutral-800">UNIT</td>
                 <td className="px-4 py-2 border border-neutral-800">
                   UNIT TITLE

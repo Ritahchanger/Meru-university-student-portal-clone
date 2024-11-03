@@ -4,6 +4,8 @@ import SideBarSlice from "./features/SidebarSlice";
 import UnitsRegistrationSlice from "./features/UnitsRegistrationSlice";
 
 
+import transitModalSlice from "./features/TransitModalSlice";
+
 const store  = configureStore({
 
 
@@ -11,7 +13,9 @@ const store  = configureStore({
 
         sidebar:SideBarSlice.reducer,
 
-        registrationSlice:UnitsRegistrationSlice.reducer
+        registrationSlice:UnitsRegistrationSlice.reducer,
+
+        transitModal:transitModalSlice.reducer
 
     }
 
