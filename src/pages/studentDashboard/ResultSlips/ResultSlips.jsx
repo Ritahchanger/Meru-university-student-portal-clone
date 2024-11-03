@@ -10,6 +10,11 @@ import { openTransitModal } from "../../../store/features/TransitModalSlice";
 import { useDispatch } from "react-redux";
 import Preloader from "../../../components/preloader/Preloader";
 
+import {
+  openPreloaderSlice,
+  closePreloaderSlice,
+} from "../../../store/features/preloaderSlice";
+
 const ResultSlips = () => {
   const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
 
@@ -24,18 +29,28 @@ const ResultSlips = () => {
 
   const dispatch = useDispatch();
 
-  const handleOpenTransitModal=()=>{
+  const handleOpenTransitModal = () => {
+    dispatch(openPreloaderSlice());
+    setTimeout(() => {
+      dispatch(closePreloaderSlice());
+      dispatch(openTransitModal(null));
+    }, 1000);
+  };
 
-    dispatch(openTransitModal(null))
-
-  }
+  const isPreloaderSliceShown = useSelector(
+    (state) => state.preloader.isPreloaderSliceShown
+  );
 
   return (
     <div className="graduation-links">
       <StudentDashNavbar />
       <StudentDashSidebar />
 
-      <div className={`main border border-neutral-400 pb-[1rem] ${!isSidebarShown ? "mobile" : ""}`}>
+      <div
+        className={`main border border-neutral-400 pb-[1rem] ${
+          !isSidebarShown ? "mobile" : ""
+        }`}
+      >
         <div className="py-[0.5rem] px-[1rem] custom-orange sub-header">
           <p>Student Reports</p>
         </div>
@@ -45,8 +60,12 @@ const ResultSlips = () => {
             <thead>
               <tr>
                 <td className="px-4 py-2 border border-neutral-300">View</td>
-                <td className="px-4 py-2 border border-neutral-300">Academic Year</td>
-                <td className="px-4 py-2 border border-neutral-300">Semester</td>
+                <td className="px-4 py-2 border border-neutral-300">
+                  Academic Year
+                </td>
+                <td className="px-4 py-2 border border-neutral-300">
+                  Semester
+                </td>
                 <td className="px-4 py-2 border border-neutral-300">Year</td>
               </tr>
             </thead>
@@ -54,13 +73,22 @@ const ResultSlips = () => {
               {resultSlips.map((slip, index) => (
                 <tr key={index}>
                   <td className="px-4 py-2 border border-neutral-300">
-                    <button className="py-1 px-3 text-white bg-green-500 hover:bg-green-700 transition-all" onClick={handleOpenTransitModal}>
+                    <button
+                      className="py-1 px-3 text-white bg-green-500 hover:bg-green-700 transition-all"
+                      onClick={handleOpenTransitModal}
+                    >
                       view
                     </button>
                   </td>
-                  <td className="px-4 py-2 border border-neutral-300">{slip.academicYear}</td>
-                  <td className="px-4 py-2 border border-neutral-300">{slip.semester}</td>
-                  <td className="px-4 py-2 border border-neutral-300">{slip.year}</td>
+                  <td className="px-4 py-2 border border-neutral-300">
+                    {slip.academicYear}
+                  </td>
+                  <td className="px-4 py-2 border border-neutral-300">
+                    {slip.semester}
+                  </td>
+                  <td className="px-4 py-2 border border-neutral-300">
+                    {slip.year}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -70,7 +98,7 @@ const ResultSlips = () => {
 
       <TransitModal />
 
-      <Preloader/>
+      <Preloader />
     </div>
   );
 };

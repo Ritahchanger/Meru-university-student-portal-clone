@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  isPreloaderSliceShown:true,
+  isPreloaderSliceShown:false,
 };
 
 const preloaderSlice = createSlice({
