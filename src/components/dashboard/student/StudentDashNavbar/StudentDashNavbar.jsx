@@ -34,8 +34,6 @@ const StudentDashNavbar = () => {
     setDropdownVisible((prev) => !prev);
   };
 
-
-
   return (
     <Fragment>
       <div className="navbar">

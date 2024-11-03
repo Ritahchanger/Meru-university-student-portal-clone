@@ -105,7 +105,7 @@ const ResultSlips = () => {
         </div>
       </div>
 
-      {/* <TransitModal/> */}
+      <TransitModal/>
     </div>
   );
 };
