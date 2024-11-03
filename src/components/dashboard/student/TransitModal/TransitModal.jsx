@@ -68,7 +68,10 @@ const TransitModal = () => {
 
   return (
     <div className="modal transit bg-green-600">
-      <div className="modal-wrapper bg-green-600">
+      <div className="modal-wrapper bg-green-600 relative m-[1rem] border-2 border-green-800">
+        <button className="fixed top-[1rem] right-[1rem] h-[35px] w-[35px] bg-red-600 text-white text-2xl">
+          &times;
+        </button>
         <div className="flex justify-center items-center  mb-[1rem]">
           <img
             src="https://student.must.ac.ke/img/Logo.png"
