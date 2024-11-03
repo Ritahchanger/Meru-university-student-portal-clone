@@ -5,6 +5,7 @@ import UnitsRegistrationSlice from "./features/UnitsRegistrationSlice";
 
 
 import transitModalSlice from "./features/TransitModalSlice";
+import preloaderSlice from "./features/preloaderSlice";
 
 const store  = configureStore({
 
@@ -15,7 +16,9 @@ const store  = configureStore({
 
         registrationSlice:UnitsRegistrationSlice.reducer,
 
-        transitModal:transitModalSlice.reducer
+        transitModal:transitModalSlice.reducer,
+
+        preloader:preloaderSlice.reducer
 
     }
 

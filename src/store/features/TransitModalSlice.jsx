@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   data: null,
 
-  isTransitModalShown:true,
+  isTransitModalShown:false,
 };
 
 const transitModalSlice = createSlice({

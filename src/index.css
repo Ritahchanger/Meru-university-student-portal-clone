@@ -1,17 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); */
-
-@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Outfit", sans-serif; */
-  font-family: "Itim", cursive;
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Itim", cursive; */
 }
 :root {
   --white: #ffffff;
@@ -35,7 +36,7 @@ body {
   background: #ababab;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0eff00;
+  background: #222;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
