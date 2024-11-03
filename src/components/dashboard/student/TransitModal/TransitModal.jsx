@@ -62,6 +62,10 @@ const TransitModal = () => {
     },
   ];
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="modal transit bg-green-600">
       <div className="modal-wrapper bg-green-600">
@@ -177,8 +181,30 @@ const TransitModal = () => {
               Date .......................................................{" "}
             </p>
           </div>
-          <h4 className="font-semibold">Dean - School of Computing and Informatics</h4>
+          <h4 className="font-semibold">
+            Dean - School of Computing and Informatics
+          </h4>
         </div>
+
+        <div className=" border-t-2 border-neutral-800 mt-[1rem]">
+          <p
+            style={{
+              fontFamily: "fantasy",
+            }}
+          >
+            <strong>Note</strong> This result slip is not a transcript. Meru
+            University of Science and Technology reserves the right to correct
+            the information given on the result slip, which will be confirmed by
+            the issue of a transcript after successful completion of the
+            academic year.
+          </p>
+        </div>
+        <button
+          onClick={handlePrint}
+          className="px-3 py-1 bg-green-900 text-white"
+        >
+          PRINT TRANSCRIPT
+        </button>
       </div>
     </div>
   );
