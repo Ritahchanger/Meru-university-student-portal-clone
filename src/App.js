@@ -19,6 +19,12 @@ import AcademicRequisition from "./pages/studentDashboard/AcademicRequision/Acad
 import LecturesEvaluation from "./pages/studentDashboard/LecturesEvaluation/LecturesEvaluation";
 
 import IndustrialAttachment from "./pages/studentDashboard/IndustrialAttatchment/IndustrialAttachment";
+
+import HostelClearance from "./pages/studentDashboard/HostelClearance/HostelClearance";
+
+
+import ResultSlips from "./pages/studentDashboard/ResultSlips/ResultSlips";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -55,6 +61,16 @@ const App = () => {
         <Route
           path={sideBarLinks.industrialAttachment}
           element={<IndustrialAttachment/>}
+        />
+        
+        <Route
+          path={sideBarLinks.hostelClearance}
+          element={<HostelClearance/>}
+        />
+
+        <Route
+          path={sideBarLinks.provisionalResultSlip}
+          element={<ResultSlips/>}
         />
       </Routes>
     </BrowserRouter>

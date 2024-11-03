@@ -15,7 +15,7 @@ import { IoIosPeople, IoIosPaper } from "react-icons/io";
 import { BsFillHouseDoorFill, BsCardChecklist } from "react-icons/bs";
 import { AiFillFilePdf, AiOutlineQuestionCircle } from "react-icons/ai";
 
-import sideBarLinks from "../NavigationLinks/SidebarLinks"
+import sideBarLinks from "../NavigationLinks/SidebarLinks";
 
 const sidebarData = [
   {
@@ -69,12 +69,12 @@ const sidebarData = [
       {
         subTitle: "Lectures Evaluation",
         icon: <FaChalkboardTeacher />,
-        path:"/student/lectures/evaluation"
+        path: "/student/lectures/evaluation",
       },
       {
         subTitle: "Industrial Attachment",
         icon: <IoIosPeople />,
-        path:sideBarLinks.industrialAttachment
+        path: sideBarLinks.industrialAttachment,
       },
     ],
   },
@@ -88,6 +88,7 @@ const sidebarData = [
       {
         subTitle: "Provisional Result Slip",
         icon: <AiFillFilePdf />,
+        path: sideBarLinks.provisionalResultSlip,
       },
     ],
   },
@@ -97,6 +98,7 @@ const sidebarData = [
       {
         subTitle: "Hostel Clearance",
         icon: <BsFillHouseDoorFill />,
+        path: sideBarLinks.hostelClearance,
       },
     ],
   },

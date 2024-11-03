@@ -1,0 +1,10 @@
+.modal.transit{
+    display:flex;
+}
+.modal.transit .modal-wrapper{
+    max-width:1000px;
+
+    background:green;
+
+    max-height:calc(100vh - 50px);
+}

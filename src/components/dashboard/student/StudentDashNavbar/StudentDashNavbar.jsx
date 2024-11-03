@@ -121,16 +121,16 @@ const StudentDashNavbar = () => {
                   <li className="flex items-center cursor-pointer hover:bg-green-500 hover:text-white transition-all h-[40px]">
                     <Link
                       to="/"
-                      className="flex p-2 items-end h-full text-xs-extra w-full"
+                      className="flex p-2 items-end h-full text-sm w-full"
                     >
                       {" "}
                       <FaTachometerAlt className="mr-2" /> Dashboard
                     </Link>
                   </li>
-                  <li className="flex items-center p-2 cursor-pointer hover:bg-green-500 hover:text-white transition-all h-[40px]">
+                  <li className="flex items-center  cursor-pointer hover:bg-green-500 hover:text-white transition-all h-[40px]">
                     <Link
                       to="/auth/login"
-                      className="flex p-2 items-center h-full text-xs-extra w-full"
+                      className="flex p-2 items-center h-full w-full "
                     >
                       <FaSignOutAlt className="mr-2" /> Logout
                     </Link>
