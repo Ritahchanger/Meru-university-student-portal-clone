@@ -1,4 +1,5 @@
 import ProfileIcon from "../../../../Assets/images/profileIcon.png";
+import UpdateProfileInfo from "../UpdateProfileInfo/UpdateProfileInfo";
 import "./PersonalInformation.css";
 const studentInformation = {
   name: "PETER DENNIS MUNYAO",
@@ -60,7 +61,7 @@ const PersonalInformation = () => {
             <span className="font-semibold">County:</span>
             {studentInformation.county}
           </p>
-        </li >
+        </li>
         <li className="border-b border-neutral-300">
           <p>
             <span className="font-semibold">Nationality:</span>
@@ -68,6 +69,7 @@ const PersonalInformation = () => {
           </p>
         </li>
       </ul>
+      <UpdateProfileInfo/>
     </div>
   );
 };

@@ -28,3 +28,10 @@
 .personal-information .subtitle{
   margin:1rem;
 }
+.personal-information .modal{
+  display:flex;
+}
+
+.personal-information .modal .modal-wrapper {
+  height:var(100vh - 50px)
+}

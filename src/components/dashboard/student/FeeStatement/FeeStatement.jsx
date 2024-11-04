@@ -23,11 +23,11 @@ const FeeStatement = () => {
             = Ksh.XX.00
           </p>
         </div>
-        <div className="mt-[1rem] pt-[1rem] border-t border-neutral-400 flex justify-between items-center sm:flex-col">
+        <div className="mt-[1rem] pt-[1rem] border-t border-neutral-400 flex justify-between items-center sm:flex-col gap-[5px] ">
           <div>
             <a
               href="#"
-              className="h-[40px] text-white px-[1rem] flex justify-center items-center bg-blue-400 text-xs-extra rounded-sm"
+              className="h-[40px] text-white px-[1rem] flex justify-center items-center bg-blue-400  text-xs-extra rounded-sm"
             >
               View Fee Statement
             </a>
@@ -35,7 +35,7 @@ const FeeStatement = () => {
           <div>
             <a
               href="#"
-              className="h-[40px]  text-white px-[1rem] flex justify-center items-center bg-blue-400 text-xs-extra rounded-sd "
+              className="h-[40px]  text-white px-[1rem] flex justify-center items-center  bg-blue-400 text-xs-extra rounded-sd "
             >
               View Payment Receipts
             </a>
