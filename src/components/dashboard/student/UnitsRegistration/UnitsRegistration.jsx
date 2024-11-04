@@ -4,16 +4,31 @@ import ModalUnits from "../../../modals/ModalUnits";
 import { useDispatch } from "react-redux";
 
 import { showUnitsRegistrationModal } from "../../../../store/features/UnitsRegistrationSlice";
+import Preloader from "../../../preloader/Preloader";
+
+import {
+  openPreloaderSlice,
+  closePreloaderSlice,
+} from "../../../../store/features/preloaderSlice";
 
 const UnitsRegistration = () => {
 
-    const dispatch = useDispatch()
+  
+  const dispatch = useDispatch();
 
-    const handleShowUnitsRegistrationModal = () =>{
-  
-      dispatch(showUnitsRegistrationModal(null))
-  
-    }
+  const handleShowUnitsRegistrationModal = () => {
+
+    dispatch(openPreloaderSlice());
+
+    setTimeout(() => {
+
+      dispatch(closePreloaderSlice());
+      
+      dispatch(showUnitsRegistrationModal(null));
+
+    }, 1000);
+
+  };
 
   const handleGetUnits = () => {
     const regType = document.querySelector('select[name="regType"]').value;
@@ -25,7 +40,7 @@ const UnitsRegistration = () => {
         confirmButtonText: "Okay",
       });
     } else {
-      handleShowUnitsRegistrationModal()
+      handleShowUnitsRegistrationModal();
     }
   };
 
@@ -77,8 +92,9 @@ const UnitsRegistration = () => {
       <p className="p-[0.5rem] border border-neutral-300 text-xs-extra">
         NO SELECTED UNITS FOUND
       </p>
-      
-      <ModalUnits/>
+
+      <ModalUnits />
+      <Preloader />
     </div>
   );
 };
