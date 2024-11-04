@@ -18,9 +18,8 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     Swal.fire({
-      title: "Loading...",
+      title: "ACCESS GRANTED",
       icon: "success",
-      text: "Please wait while we log you in.",
       allowOutsideClick: false,
       onBeforeOpen: () => {
         Swal.showLoading();
