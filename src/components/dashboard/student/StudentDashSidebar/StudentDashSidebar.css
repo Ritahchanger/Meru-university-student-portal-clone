@@ -4,18 +4,18 @@
   background: var(--backgroundOne);
   overflow-y: scroll;
   position: fixed;
-  left:-100%;
-  transition:all 0.3s;
+  left: -100%;
+  transition: all 0.3s;
 }
-.sidebar.active{
-  left:0;
+.sidebar.active {
+  left: 0;
 }
 
 .sidebar ul li a {
   display: flex;
   text-decoration: none;
   align-items: center;
-  text-align:start;
+  text-align: start;
   color: var(--black);
   font-size: 0.9rem;
   padding: 0.4rem 2rem;
@@ -25,14 +25,14 @@
 }
 
 .sidebar .card-title {
-  color: var(--backgroundFour);
-  font-size: 0.8rem;
+  color: #ffb300;
+  font-size: 1rem;
   margin-left: 1rem;
 }
 
 .sidebar ul li a span {
   display: flex;
-  align-items:start;
+  align-items: start;
   margin-right: 10px;
   font-size: 1.4rem;
 }
@@ -50,23 +50,19 @@
 
 .sidebar-content ul li .active {
   background: #000; /* Change background to black for active state */
-  color:var(--backgroundFour); /* Optional: Change text color for better contrast */
+  color: var(
+    --backgroundFour
+  ); /* Optional: Change text color for better contrast */
 }
 
-@media(max-width:1132px){
-
-  .sidebar{
-
-    left:-100%;
-  
+@media (max-width: 1132px) {
+  .sidebar {
+    left: -100%;
   }
-  
-  .sidebar.active{
 
-    left:0;
+  .sidebar.active {
+    left: 0;
 
-    z-index:9;
-  
+    z-index: 9;
   }
-  
 }

@@ -9,27 +9,26 @@ const StudentDashSidebar = () => {
   const dispatch = useDispatch();
   const isSidebarShown = useSelector((state) => state.sidebar.isSidebarShown);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const location = useLocation(); // Hook to get current path
+  const location = useLocation(); 
 
   useEffect(() => {
-    // Function to handle window resize
+    
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
-      // Hide sidebar if screen width is less than or equal to 820px
+      
       if (window.innerWidth <= 820) {
         dispatch(hideSidebar());
       }
     };
 
-    // Add event listener for window resize
+    
     window.addEventListener("resize", handleResize);
 
-    // Cleanup function to remove the event listener
     return () => window.removeEventListener("resize", handleResize);
-  }, [dispatch]); // Removed screenWidth from dependency array
+  }, [dispatch]); 
 
   const handleHideSidebar = () => {
-    // Hide sidebar on item click if screen width is less than or equal to 820px
+   
     if (screenWidth <= 820) {
       dispatch(hideSidebar());
     }
