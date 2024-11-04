@@ -1,7 +1,7 @@
 import CountySelect from "../CountySelect/CountySelect";
 import EthnicitySelect from "../EthnicitySelect/EthnicitySelect";
 
-const UpdateProfileInfo = () => {
+const UpdateProfileInfo = ({ setEditProfile }) => {
   return (
     <div className="modal">
       <div
@@ -51,9 +51,23 @@ const UpdateProfileInfo = () => {
             />
           </div>
         </div>
-        <div>
-          <button>submit</button>
-          <button>close</button>
+        <div className="mt-[1rem]">
+          <button
+            className="py-1 px-4 bg-green-500 text-white uppercase rounded-sm hover:bg-transparent border-2 border-green-500 hover:text-green-500 transition-[0.5s] "
+            onClick={() => {
+              setEditProfile((prev) => !prev);
+            }}
+          >
+            submit
+          </button>
+          <button
+            className="py-1 px-4 bg-red-500 text-white uppercase rounded-sm ml-2 hover:bg-transparent border-2 border-red-500 hover:text-red-500 transition-[0.5s] "
+            onClick={() => {
+              setEditProfile((prev) => !prev);
+            }}
+          >
+            close
+          </button>
         </div>
       </div>
     </div>

@@ -1,6 +1,13 @@
 import ProfileIcon from "../../../../Assets/images/profileIcon.png";
 import UpdateProfileInfo from "../UpdateProfileInfo/UpdateProfileInfo";
 import "./PersonalInformation.css";
+import Preloader from "../../../preloader/Preloader";
+import {
+  openPreloaderSlice,
+  closePreloaderSlice,
+} from "../../../../store/features/preloaderSlice";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 const studentInformation = {
   name: "PETER DENNIS MUNYAO",
   regNo: "CT201/11111/11",
@@ -12,13 +19,30 @@ const studentInformation = {
   nationality: "KEN",
   registeredUnits: [{ thisSem: 8 }, { lastSem: 43 }],
 };
+
 const PersonalInformation = () => {
+  const [editProfile, setEditProfile] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const handleUpdateProfileInformation = () => {
+    dispatch(openPreloaderSlice());
+
+    setTimeout(() => {
+      dispatch(closePreloaderSlice());
+
+      setEditProfile((prev) => !prev);
+    }, 1000);
+  };
   return (
     <div className="personal-information">
       <h3 className="subtitle font-semibold">Personal Information</h3>
       <div className="profile-icon-wrapper">
         <img src={ProfileIcon} alt="" />
-        <button className="text-xs-extra custom-orange border-md py-[0.5rem] px-[1rem] mt-10">
+        <button
+          className="text-xs-extra custom-orange border-md py-[0.5rem] px-[1rem] mt-10"
+          onClick={handleUpdateProfileInformation}
+        >
           Update Information
         </button>
       </div>
@@ -69,7 +93,9 @@ const PersonalInformation = () => {
           </p>
         </li>
       </ul>
-      <UpdateProfileInfo/>
+      {editProfile && <UpdateProfileInfo setEditProfile={setEditProfile} />}
+
+      <Preloader />
     </div>
   );
 };

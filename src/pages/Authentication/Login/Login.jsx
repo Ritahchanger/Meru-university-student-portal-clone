@@ -3,7 +3,17 @@ import Swal from "sweetalert2";
 
 import { useNavigate } from "react-router-dom";
 
+import { useDispatch } from "react-redux";
+
+import Preloader from "../../../components/preloader/Preloader";
+
+import {
+  openPreloaderSlice,
+  closePreloaderSlice,
+} from "../../../store/features/preloaderSlice";
+
 const Login = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,12 +25,14 @@ const Login = () => {
       onBeforeOpen: () => {
         Swal.showLoading();
       },
-    });
+    }).then(() => {
+      dispatch(openPreloaderSlice());
 
-    setTimeout(() => {
-      Swal.close();
-      navigate("/");
-    }, 2000);
+      setTimeout(() => {
+        dispatch(closePreloaderSlice());
+        navigate("/");
+      }, 2000);
+    });
   };
 
   return (
@@ -89,6 +101,7 @@ const Login = () => {
           />
         </form>
       </div>
+      <Preloader />
     </div>
   );
 };
