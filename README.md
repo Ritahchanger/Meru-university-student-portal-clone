@@ -30,23 +30,23 @@ This project is a clone of our university's student portal interface. The projec
 Here are some screenshots of the application:
 
 ![Grades and Transcripts](src/screenshots/screen5.png)
-*Receipts section*
-
+*Dashboard*
+![Grades and Transcripts](src/screenshots/screen10.png)
+*Edit profile*
 ![Dashboard](src/screenshots/screen1.png)
 *Dashboard showcasing student resources*
-
 ![Profile Management](src/screenshots/screen2.png)
 *Units registration, for the case unit's to register not taken*
-
 ![Course Information](src/screenshots/screen3.png)
 *Login display*
-
 ![Grades and Transcripts](src/screenshots/screen6.png)
 *Receipts section*
 ![Grades and Transcripts](src/screenshots/screen7.png)
 *Industrial Attachment*
 ![Grades and Transcripts](src/screenshots/screen8.png)
 *Lectures Evaluation*
+![Grades and Transcripts](src/screenshots/screen9.png)
+*Transcript previewer*
 
 ## Getting Started
 

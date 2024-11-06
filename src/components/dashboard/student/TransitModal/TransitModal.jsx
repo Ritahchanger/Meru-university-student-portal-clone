@@ -126,7 +126,7 @@ const TransitModal = () => {
             </div>
             <table className="w-full">
               <thead>
-                <tr className="text-start font-semibold">
+                <tr className="text-start font-semibold text-xs-extra md:text-sm">
                   <td className="px-4 py-2 border border-neutral-800">UNIT</td>
                   <td className="px-4 py-2 border border-neutral-800">
                     UNIT TITLE
@@ -142,8 +142,8 @@ const TransitModal = () => {
               </thead>
               <tbody>
                 {units.map((unit, index) => (
-                  <tr key={index}>
-                    <td className="px-4 py-2 border border-neutral-800">
+                  <tr key={index} className="text-xs-extra md:text-sm">
+                    <td className="px-4 py-2 border  border-neutral-800">
                       {unit.code}
                     </td>
                     <td className="px-4 py-2 border border-neutral-800">
